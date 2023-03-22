@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.page__body{
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  margin:0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+}
+@media (max-width: 1199px) {
+  max-width: 1170px;
+}
+@media (max-width: 767px) {
+  max-width: 750px;
+}
+@media (max-width: 320px) {
+  max-width: none;
+}

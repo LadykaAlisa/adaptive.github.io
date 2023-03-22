@@ -1,0 +1,56 @@
+.main__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__title {
+  @include title-text;
+  color: rgba(78, 78, 78, 1);
+  margin-top: 66px;
+  margin-bottom: 24px;
+}
+
+.main-posts {
+  display: grid;
+  grid-template-rows:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.66vw;
+  grid-column-gap: 1.3vw;
+  padding-bottom: 3.5vw;
+
+  &__picture {
+    width: 160px;
+    height: 150px;
+  }
+
+  &__element {
+    display: flex;
+  }
+
+  &__title {
+    font-weight: bold;
+    margin-left: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    color: #4E4E4E;
+  }
+
+  &__comments {
+    font-weight: normal;
+    font-size: 12px;
+    margin-left: 20px;
+    line-height: 20px;
+    color: #7C7C7C;
+  }
+
+  &__paragraph {
+    font-weight: normal;
+    margin-left: 20px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #5C5C5C;
+  }
+}
+
+

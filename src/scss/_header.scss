@@ -1,0 +1,47 @@
+.header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
+  margin-bottom: 43px;
+
+  &__item {
+    list-style: none;
+    margin-right: 4.427083333333333vw;
+  }
+
+  &__link {
+    color: rgba(78, 78, 78, 1);
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 22px;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: #57A4A4;
+  }
+
+}
+.header-menu__link:hover {
+  color: #57A4A4;
+}
+
+.header-menu__item:last-child {
+  margin-right: 0;
+}
+.mobile-nav{
+  display: none;
+}
+.menu-icon {
+  z-index: 19;
+  position: relative;
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  bottom: 0;
+}
+
+
+

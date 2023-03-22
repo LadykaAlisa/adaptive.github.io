@@ -1,0 +1,52 @@
+.page__footer {
+  background-color: black;
+  padding: 0;
+}
+
+.footer__title {
+ @include title-text;
+  text-align: center;
+  color: #FEFEFE;
+  padding-top: 66px;
+  padding-bottom: 23px;
+}
+.footer__paragraph {
+  text-align: center;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: $textColor;
+  width:  684px;
+  padding-bottom: 37px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  cursor:pointer;
+}
+.footer-contacts {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 34px;
+  padding-bottom: 70px;
+  text-decoration: none;
+
+  &__adress {
+    color: $textColor;
+    text-decoration: none;
+  }
+
+  &__mail {
+    color: $textColor;
+    text-decoration: none;
+  }
+
+  &__phone-number {
+    color: $textColor;
+    text-decoration: none;
+  }
+}

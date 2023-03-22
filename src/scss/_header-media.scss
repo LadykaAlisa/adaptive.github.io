@@ -1,0 +1,109 @@
+@media (max-width: 767px) {
+  .menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    width: 44px;
+    height: 37px;
+    margin-top: 23px;
+    left: 138px;
+    position: relative;
+
+  }
+
+  .menu-icon-line {
+    position: relative;
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+  }
+
+  .menu-icon-line::before {
+    //position: absolute;
+    left: 0;
+    top: -5px;
+    content: '';
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  .menu-icon-line::after {
+    //position: absolute;
+    left: 0;
+    top: 5px;
+    content: '';
+    width: 17px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+  }
+
+  .menu-icon.menu-icon-active .menu-icon-line {
+    background-color: transparent;
+  }
+
+  .menu-icon.menu-icon-active .menu-icon-line::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+
+  .menu-icon.menu-icon-active .menu-icon-line::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+  }
+  .page__header {
+    position: absolute;
+    right: 0;
+
+  }
+  .header-menu {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+    width: 182px;
+    background: #F5F5F5;
+  }
+}
+
+.mobile-nav__active {
+  transform: translateY(-130%);
+}
+
+.mobile-nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav__item {
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 13px;
+  position: relative;
+  top: 318px;
+
+}
+
+.mobile-nav__item-active {
+  background: #E5E5E5;
+}
+
+.mobile-nav__link {
+  position: relative;
+  color: rgba(78, 78, 78, 1);
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  text-decoration: none;
+}
+
+.mobile-nav__link:hover {
+  color: #57A4A4;
+}

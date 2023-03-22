@@ -1,0 +1,24 @@
+@media (max-width: 767px) {
+  .page__footer {
+    padding: 0;
+  }
+  .footer-contacts {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__title {
+    padding-bottom: 8px;
+    font-size: 14px;
+  }
+  .footer__paragraph {
+    width: 303px;
+    padding-bottom: 26px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .footer-contacts {
+    font-size: 14px;
+  }
+
+}
